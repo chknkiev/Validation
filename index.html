@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation</title>
+  <script src="./script.js"></script>
+</head>
+<body>
+  <form>
+    <input type="text" id="email" placeholder="Email Address" required pattern="[A-Za-z.@]+">
+    <input type="text" id="country" placeholder="Country" required pattern="[A-Za-z]+">
+    <input type="text" id="zipcode" placeholder="Zip Code" required pattern="[0-9]+">
+    <input type="text" id="password" placeholder="Password" minimum-length="5">
+    <input type="text" id="confirmPW" placeholder="Confirm Password" minimum-length="5" >
+    <button type="submit" id="submit"></button>
+  </form>
+</body>
+</html>
